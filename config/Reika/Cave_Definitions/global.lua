@@ -1,7 +1,7 @@
 {
 	type = "global"
-	cave_size = 1.0
-	density = 1.0
+	cave_size = 2.0
+	density = 2.0
 	dungeons = 1.0
 	gen_strongholds = true
 	large_cave_chance = 25.0
