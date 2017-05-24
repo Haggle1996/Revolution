@@ -22,9 +22,9 @@ betterfps.txt
 TimeUsage.txt
 settings.rtg
 usernamecache.json
-fastcraft.ini
-splash.properties
-UniqueNames.txt
+config/fastcraft.ini
+config/splash.properties
+config/UniqueNames.txt
 
 # Reika stuff
 ChromatiCraft_Data
