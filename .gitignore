@@ -1,3 +1,30 @@
+# CurseForge
+.curseclient
+
+# Minecraft
+options.txt
+asm/
+backups/
+crash-reports/
+fonts/
+journeymap/
+logs/
+mods/
+resourcepacks/
+saves/
+
+# Mod garbage
+betterfps.txt
+*.log
+TimeUsage.txt
+settings.rtg
+usernamecache.json
+
+# Reika stuff
+ChromatiCraft_Data
+DimensionGen.dat
+*.classdata
+
 # Binaries for programs and plugins
 *.exe
 *.dll
