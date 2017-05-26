@@ -18,7 +18,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2017-05-26T18:56:51.193741Z",
+  "lastPlayed": "2017-05-26T20:48:04.187764Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -33,21 +33,6 @@
   "installPath": "C:\\Users\\og199\\Documents\\Curse\\Minecraft\\Instances\\REVOLUTION 4\\",
   "name": "REVOLUTION",
   "cachedScans": [
-    {
-      "folderName": "Dynamic Lights-1.3.9a-MC1.7.10.jar",
-      "fingerprint": 243558376,
-      "fileDateHash": 844333777,
-      "sectionID": 6,
-      "individualFingerprints": [
-        243558376
-      ],
-      "status": 1,
-      "timestamp": "2017-05-24T22:03:50.4991865Z",
-      "lastWriteTimeUtc": "2017-05-24T21:59:40.4551012Z",
-      "queryTimestamp": "2017-05-26T18:42:02.0641948Z",
-      "fileCount": 1,
-      "fileSize": 48937
-    },
     {
       "folderName": "BiblioWoods[Forestry][v1.7].jar",
       "fingerprint": 439084727,
@@ -109,13 +94,28 @@
       "fileSize": 182657
     },
     {
+      "folderName": "coroutil-1.7.10-1.1.6.jar",
+      "fingerprint": 3961648605,
+      "fileDateHash": 941162637,
+      "sectionID": 6,
+      "individualFingerprints": [
+        3961648605
+      ],
+      "status": 1,
+      "timestamp": "2017-05-26T20:11:57.6679118Z",
+      "lastWriteTimeUtc": "2017-05-26T19:09:54.5861613Z",
+      "queryTimestamp": "2017-05-26T20:11:58.1220451Z",
+      "fileCount": 1,
+      "fileSize": 1297035
+    },
+    {
       "folderName": "DragonAPI",
       "fingerprint": 0,
       "fileDateHash": 0,
       "sectionID": 17,
       "individualFingerprints": null,
       "status": 3,
-      "timestamp": "2017-05-26T18:42:01.8905277Z",
+      "timestamp": "2017-05-26T20:11:57.9541828Z",
       "lastWriteTimeUtc": "2017-05-24T17:22:08.442583Z",
       "queryTimestamp": "0001-01-01T00:00:00",
       "fileCount": 0,
@@ -289,21 +289,6 @@
       "fileSize": 54245
     },
     {
-      "folderName": "malisisdoors-1.7.10-1.13.2.jar",
-      "fingerprint": 3015626492,
-      "fileDateHash": 3331576191,
-      "sectionID": 6,
-      "individualFingerprints": [
-        3015626492
-      ],
-      "status": 1,
-      "timestamp": "2017-05-24T16:32:22.2782479Z",
-      "lastWriteTimeUtc": "2017-05-24T15:12:55.3184443Z",
-      "queryTimestamp": "2017-05-26T18:42:02.0656975Z",
-      "fileCount": 1,
-      "fileSize": 1645689
-    },
-    {
       "folderName": "ElectriCraft 1.7.10 V17a.jar.disabled",
       "fingerprint": 2746961193,
       "fileDateHash": 725539358,
@@ -334,11 +319,27 @@
       "fileSize": 4519402
     },
     {
+      "folderName": "Dynamic Lights-1.3.9a-MC1.7.10.jar.disabled",
+      "fingerprint": 243558376,
+      "fileDateHash": 844333777,
+      "sectionID": 6,
+      "individualFingerprints": [
+        243558376
+      ],
+      "status": 1,
+      "timestamp": "2017-05-26T20:11:57.6769051Z",
+      "lastWriteTimeUtc": "2017-05-24T21:59:40.4551012Z",
+      "queryTimestamp": "2017-05-26T20:11:58.1230461Z",
+      "fileCount": 1,
+      "fileSize": 48937
+    },
+    {
       "folderName": "NEI",
-      "fingerprint": 1651313710,
-      "fileDateHash": 2327374968,
+      "fingerprint": 1323035932,
+      "fileDateHash": 3117154671,
       "sectionID": 17,
       "individualFingerprints": [
+        530454308,
         530454308,
         530454308,
         530454308,
@@ -367,12 +368,13 @@
         3818714025,
         3818714025,
         3818714025,
+        3818714025,
         3818714025
       ],
       "status": 1,
-      "timestamp": "2017-05-26T18:42:01.8910292Z",
+      "timestamp": "2017-05-26T20:11:57.9541828Z",
       "lastWriteTimeUtc": "2017-05-24T18:09:32.2865933Z",
-      "queryTimestamp": "2017-05-26T18:42:02.0661978Z",
+      "queryTimestamp": "2017-05-26T20:11:58.1230461Z",
       "fileCount": 2,
       "fileSize": 0
     },
@@ -901,21 +903,6 @@
       "fileSize": 513136
     },
     {
-      "folderName": "HardcoreDarkness-MC1.7.10-1.7.jar",
-      "fingerprint": 221304053,
-      "fileDateHash": 1823023879,
-      "sectionID": 6,
-      "individualFingerprints": [
-        221304053
-      ],
-      "status": 1,
-      "timestamp": "2017-05-24T22:03:50.5122006Z",
-      "lastWriteTimeUtc": "2017-05-24T20:23:57.9847057Z",
-      "queryTimestamp": "2017-05-26T18:42:02.0697014Z",
-      "fileCount": 1,
-      "fileSize": 20632
-    },
-    {
       "folderName": "008-1-40",
       "fingerprint": 2314756567,
       "fileDateHash": 3076289749,
@@ -1187,6 +1174,21 @@
       "queryTimestamp": "2017-05-26T18:42:02.0712038Z",
       "fileCount": 1,
       "fileSize": 267328
+    },
+    {
+      "folderName": "weather2-1.7.10-2.3.19.jar",
+      "fingerprint": 1543279077,
+      "fileDateHash": 3917991249,
+      "sectionID": 6,
+      "individualFingerprints": [
+        1543279077
+      ],
+      "status": 1,
+      "timestamp": "2017-05-26T20:11:57.8110332Z",
+      "lastWriteTimeUtc": "2017-05-26T19:09:55.11575Z",
+      "queryTimestamp": "2017-05-26T20:11:58.1270502Z",
+      "fileCount": 1,
+      "fileSize": 2088482
     },
     {
       "folderName": "catwalks-2.0.4.jar",
@@ -1777,6 +1779,21 @@
       "fileSize": 93964
     },
     {
+      "folderName": "WTFTweaks-1.7.10_v1.4.jar",
+      "fingerprint": 1586455901,
+      "fileDateHash": 2224317420,
+      "sectionID": 6,
+      "individualFingerprints": [
+        1586455901
+      ],
+      "status": 1,
+      "timestamp": "2017-05-26T20:11:57.8230445Z",
+      "lastWriteTimeUtc": "2017-05-26T18:56:22.2797395Z",
+      "queryTimestamp": "2017-05-26T20:11:58.1300528Z",
+      "fileCount": 1,
+      "fileSize": 104220
+    },
+    {
       "folderName": "NotEnoughResources-1.7.10-0.1.0-128.jar",
       "fingerprint": 930883094,
       "fileDateHash": 428700922,
@@ -1912,6 +1929,21 @@
       "fileSize": 57644
     },
     {
+      "folderName": "malisisdoors-1.7.10-1.13.2.jar.disabled",
+      "fingerprint": 3015626492,
+      "fileDateHash": 3331576191,
+      "sectionID": 6,
+      "individualFingerprints": [
+        3015626492
+      ],
+      "status": 1,
+      "timestamp": "2017-05-26T20:11:57.803026Z",
+      "lastWriteTimeUtc": "2017-05-24T15:12:55.3184443Z",
+      "queryTimestamp": "2017-05-26T20:11:58.1310537Z",
+      "fileCount": 1,
+      "fileSize": 1645689
+    },
+    {
       "folderName": "NuclearCraft-1.9f--1.7.10.jar",
       "fingerprint": 687158396,
       "fileDateHash": 2662047688,
@@ -2023,21 +2055,6 @@
       "fileSize": 119047285
     },
     {
-      "folderName": "SaltyMod-1.7.10-1.8.c_.jar",
-      "fingerprint": 1909345469,
-      "fileDateHash": 300858274,
-      "sectionID": 6,
-      "individualFingerprints": [
-        1909345469
-      ],
-      "status": 1,
-      "timestamp": "2017-05-24T17:16:44.5412815Z",
-      "lastWriteTimeUtc": "2017-05-24T17:13:03.9445418Z",
-      "queryTimestamp": "2017-05-26T18:42:02.0757084Z",
-      "fileCount": 1,
-      "fileSize": 594295
-    },
-    {
       "folderName": "003",
       "fingerprint": 2043263806,
       "fileDateHash": 3486499422,
@@ -2115,12 +2132,13 @@
     },
     {
       "folderName": "008-cc-2",
-      "fingerprint": 3236769797,
-      "fileDateHash": 3987021671,
+      "fingerprint": 3476838772,
+      "fileDateHash": 2241120633,
       "sectionID": 17,
       "individualFingerprints": [
         63137788,
         107506139,
+        228317556,
         240847911,
         379859470,
         380021271,
@@ -2160,7 +2178,6 @@
         2404748167,
         2417131965,
         2438022517,
-        2633355384,
         2649658872,
         2725706883,
         2791215065,
@@ -2186,9 +2203,88 @@
         4279914100
       ],
       "status": 1,
-      "timestamp": "2017-05-26T18:42:01.3640236Z",
+      "timestamp": "2017-05-26T20:11:57.8250464Z",
       "lastWriteTimeUtc": "2017-05-25T03:04:03.1733776Z",
-      "queryTimestamp": "2017-05-26T18:42:02.0757084Z",
+      "queryTimestamp": "2017-05-26T20:11:58.1320547Z",
+      "fileCount": 18,
+      "fileSize": 0
+    },
+    {
+      "folderName": "008-cc-3",
+      "fingerprint": 1632743264,
+      "fileDateHash": 3799456887,
+      "sectionID": 17,
+      "individualFingerprints": [
+        63137788,
+        107506139,
+        357054624,
+        380021271,
+        406501934,
+        599410507,
+        758054953,
+        758054953,
+        758054953,
+        758054953,
+        834586434,
+        902014641,
+        948618622,
+        952783460,
+        1058882591,
+        1117282467,
+        1348976332,
+        1540447798,
+        1540447798,
+        1540447798,
+        1593826195,
+        1601162471,
+        1774028710,
+        1900170726,
+        2007498271,
+        2187935441,
+        2214221233,
+        2258877084,
+        2258877084,
+        2281957660,
+        2281957660,
+        2281957660,
+        2281957660,
+        2281957660,
+        2281957660,
+        2281957660,
+        2281957660,
+        2281957660,
+        2281957660,
+        2438022517,
+        2748467283,
+        2748467283,
+        2748467283,
+        2748467283,
+        2794970933,
+        2897855457,
+        2912057440,
+        2947949409,
+        2971079724,
+        3003715964,
+        3101200331,
+        3154424048,
+        3300023042,
+        3437815996,
+        3771282984,
+        3771282984,
+        3784276196,
+        3798198042,
+        3835880003,
+        3870842959,
+        4183677585,
+        4186662986,
+        4213863462,
+        4213863462,
+        4254920752
+      ],
+      "status": 1,
+      "timestamp": "2017-05-26T20:11:57.9041393Z",
+      "lastWriteTimeUtc": "2017-05-26T18:49:42.5008632Z",
+      "queryTimestamp": "2017-05-26T20:11:58.1320547Z",
       "fileCount": 18,
       "fileSize": 0
     },
@@ -2236,10 +2332,25 @@
       "queryTimestamp": "2017-05-26T18:42:02.0762074Z",
       "fileCount": 1,
       "fileSize": 28800
+    },
+    {
+      "folderName": "HardcoreDarkness-MC1.7.10-1.7.jar.disabled",
+      "fingerprint": 221304053,
+      "fileDateHash": 1823023879,
+      "sectionID": 6,
+      "individualFingerprints": [
+        221304053
+      ],
+      "status": 1,
+      "timestamp": "2017-05-26T20:11:57.7549799Z",
+      "lastWriteTimeUtc": "2017-05-24T20:23:57.9847057Z",
+      "queryTimestamp": "2017-05-26T20:11:58.1320547Z",
+      "fileCount": 1,
+      "fileSize": 20632
     }
   ],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2017-05-26T18:42:02.2268634Z",
+  "lastPreviousMatchUpdate": "2017-05-26T20:11:58.3251615Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.7.10",
@@ -3305,7 +3416,7 @@
       "installedFile": {
         "Id": 2284380,
         "FileName": "malisisdoors-1.7.10-1.13.2.jar",
-        "FileNameOnDisk": "malisisdoors-1.7.10-1.13.2.jar",
+        "FileNameOnDisk": "malisisdoors-1.7.10-1.13.2.jar.disabled",
         "FileDate": "2016-02-28T14:06:03",
         "ReleaseType": 1,
         "FileStatus": 2,
@@ -3353,7 +3464,7 @@
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -5700,57 +5811,6 @@
       "manifestName": null
     },
     {
-      "addonID": 234840,
-      "gameInstanceID": "926bb863-eebe-47ea-8cbe-f247bc4b2038",
-      "installedFile": {
-        "Id": 2313083,
-        "FileName": "SaltyMod-1.7.10-1.8.c_.jar",
-        "FileNameOnDisk": "SaltyMod-1.7.10-1.8.c_.jar",
-        "FileDate": "2016-07-04T06:45:29",
-        "ReleaseType": 1,
-        "FileStatus": 2,
-        "DownloadURL": "https://addons.cursecdn.com/files/2313/83/SaltyMod-1.7.10-1.8.c_.jar",
-        "IsAlternate": false,
-        "AlternateFileId": 0,
-        "Dependencies": [],
-        "IsAvailable": true,
-        "Modules": [
-          {
-            "Foldername": "assets",
-            "Fingerprint": 4149210619
-          },
-          {
-            "Foldername": "mcmod.info",
-            "Fingerprint": 439721506
-          },
-          {
-            "Foldername": "META-INF",
-            "Fingerprint": 2464251221
-          },
-          {
-            "Foldername": "ru",
-            "Fingerprint": 826387277
-          }
-        ],
-        "PackageFingerprint": 1909345469,
-        "GameVersion": [
-          "1.7.10"
-        ]
-      },
-      "dateInstalled": "2017-05-24T17:13:03.9445418Z",
-      "dateUpdated": "2017-05-24T17:13:03.9455397Z",
-      "dateLastUpdateAttempted": "2017-05-24T17:13:03.9455397Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null
-    },
-    {
       "addonID": 225605,
       "gameInstanceID": "926bb863-eebe-47ea-8cbe-f247bc4b2038",
       "installedFile": {
@@ -6378,7 +6438,7 @@
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6437,7 +6497,7 @@
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6484,6 +6544,348 @@
       "dateInstalled": "2017-05-26T18:56:22.2812412Z",
       "dateUpdated": "2017-05-26T18:56:22.2842405Z",
       "dateLastUpdateAttempted": "2017-05-26T18:56:22.2842405Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null
+    },
+    {
+      "addonID": 237749,
+      "gameInstanceID": "926bb863-eebe-47ea-8cbe-f247bc4b2038",
+      "installedFile": {
+        "Id": 2388794,
+        "FileName": "coroutil-1.7.10-1.1.6.jar",
+        "FileNameOnDisk": "coroutil-1.7.10-1.1.6.jar",
+        "FileDate": "2017-03-04T20:02:02",
+        "ReleaseType": 1,
+        "FileStatus": 2,
+        "DownloadURL": "https://addons.cursecdn.com/files/2388/794/coroutil-1.7.10-1.1.6.jar",
+        "IsAlternate": false,
+        "AlternateFileId": 0,
+        "Dependencies": [],
+        "IsAvailable": true,
+        "Modules": [
+          {
+            "Foldername": "assets",
+            "Fingerprint": 815593808
+          },
+          {
+            "Foldername": "build",
+            "Fingerprint": 1505468317
+          },
+          {
+            "Foldername": "CoroPets",
+            "Fingerprint": 900459555
+          },
+          {
+            "Foldername": "CoroUtil",
+            "Fingerprint": 1649825527
+          },
+          {
+            "Foldername": "extendedrenderer",
+            "Fingerprint": 3765450170
+          },
+          {
+            "Foldername": "mcmod.info",
+            "Fingerprint": 3981717054
+          },
+          {
+            "Foldername": "META-INF",
+            "Fingerprint": 2464251221
+          },
+          {
+            "Foldername": "modconfig",
+            "Fingerprint": 3571512172
+          }
+        ],
+        "PackageFingerprint": 3961648605,
+        "GameVersion": [
+          "1.7.10"
+        ]
+      },
+      "dateInstalled": "2017-05-26T19:09:54.5861613Z",
+      "dateUpdated": "2017-05-26T19:09:54.5881632Z",
+      "dateLastUpdateAttempted": "2017-05-26T19:09:54.5881632Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null
+    },
+    {
+      "addonID": 237746,
+      "gameInstanceID": "926bb863-eebe-47ea-8cbe-f247bc4b2038",
+      "installedFile": {
+        "Id": 2411143,
+        "FileName": "weather2-1.7.10-2.3.19.jar",
+        "FileNameOnDisk": "weather2-1.7.10-2.3.19.jar",
+        "FileDate": "2017-04-24T02:08:29",
+        "ReleaseType": 1,
+        "FileStatus": 2,
+        "DownloadURL": "https://addons.cursecdn.com/files/2411/143/weather2-1.7.10-2.3.19.jar",
+        "IsAlternate": false,
+        "AlternateFileId": 0,
+        "Dependencies": [
+          {
+            "AddOnId": 237749,
+            "Type": 1
+          }
+        ],
+        "IsAvailable": true,
+        "Modules": [
+          {
+            "Foldername": "assets",
+            "Fingerprint": 191933781
+          },
+          {
+            "Foldername": "mcmod.info",
+            "Fingerprint": 1270118571
+          },
+          {
+            "Foldername": "META-INF",
+            "Fingerprint": 2464251221
+          },
+          {
+            "Foldername": "weather2",
+            "Fingerprint": 3825424573
+          }
+        ],
+        "PackageFingerprint": 1543279077,
+        "GameVersion": [
+          "1.7.10"
+        ]
+      },
+      "dateInstalled": "2017-05-26T19:09:55.11575Z",
+      "dateUpdated": "2017-05-26T19:09:55.1187587Z",
+      "dateLastUpdateAttempted": "2017-05-26T19:09:55.1187587Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null
+    },
+    {
+      "addonID": 227048,
+      "gameInstanceID": "926bb863-eebe-47ea-8cbe-f247bc4b2038",
+      "installedFile": {
+        "Id": 2410437,
+        "FileName": "VoltzEngine 1.7.10-1.2.3b41-UNSTABLE build 41 for 1.7.10",
+        "FileNameOnDisk": "VoltzEngine-1.7.10-1.2.3b41.jar",
+        "FileDate": "2017-04-22T17:11:21",
+        "ReleaseType": 2,
+        "FileStatus": 2,
+        "DownloadURL": "https://addons.cursecdn.com/files/2410/437/VoltzEngine-1.7.10-1.2.3b41.jar",
+        "IsAlternate": false,
+        "AlternateFileId": 0,
+        "Dependencies": [
+          {
+            "AddOnId": 69162,
+            "Type": 2
+          },
+          {
+            "AddOnId": 69163,
+            "Type": 2
+          },
+          {
+            "AddOnId": 73488,
+            "Type": 2
+          },
+          {
+            "AddOnId": 222211,
+            "Type": 2
+          },
+          {
+            "AddOnId": 222880,
+            "Type": 2
+          },
+          {
+            "AddOnId": 223008,
+            "Type": 2
+          }
+        ],
+        "IsAvailable": true,
+        "Modules": [
+          {
+            "Foldername": "assets",
+            "Fingerprint": 1669024832
+          },
+          {
+            "Foldername": "buildcraft",
+            "Fingerprint": 388968262
+          },
+          {
+            "Foldername": "cofh",
+            "Fingerprint": 3567513272
+          },
+          {
+            "Foldername": "com",
+            "Fingerprint": 1559280456
+          },
+          {
+            "Foldername": "mcmod.info",
+            "Fingerprint": 3935900111
+          },
+          {
+            "Foldername": "META-INF",
+            "Fingerprint": 3395413307
+          },
+          {
+            "Foldername": "resonant",
+            "Fingerprint": 3412778038
+          }
+        ],
+        "PackageFingerprint": 2381432237,
+        "GameVersion": [
+          "1.7.10"
+        ]
+      },
+      "dateInstalled": "2017-05-26T20:44:09.9823037Z",
+      "dateUpdated": "2017-05-26T20:44:09.9843192Z",
+      "dateLastUpdateAttempted": "2017-05-26T20:44:09.9843192Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null
+    },
+    {
+      "addonID": 244730,
+      "gameInstanceID": "926bb863-eebe-47ea-8cbe-f247bc4b2038",
+      "installedFile": {
+        "Id": 2410446,
+        "FileName": "MilitaryBaseDecor 1.7.10-0.0.1b129-UNSTABLE build 129 for 1.7.10",
+        "FileNameOnDisk": "MilitaryBaseDecor-1.7.10-0.0.1b129.jar",
+        "FileDate": "2017-04-22T17:14:29",
+        "ReleaseType": 2,
+        "FileStatus": 2,
+        "DownloadURL": "https://addons.cursecdn.com/files/2410/446/MilitaryBaseDecor-1.7.10-0.0.1b129.jar",
+        "IsAlternate": false,
+        "AlternateFileId": 0,
+        "Dependencies": [
+          {
+            "AddOnId": 69162,
+            "Type": 2
+          },
+          {
+            "AddOnId": 69163,
+            "Type": 2
+          },
+          {
+            "AddOnId": 73488,
+            "Type": 2
+          },
+          {
+            "AddOnId": 222211,
+            "Type": 2
+          },
+          {
+            "AddOnId": 222880,
+            "Type": 2
+          },
+          {
+            "AddOnId": 223008,
+            "Type": 2
+          },
+          {
+            "AddOnId": 227048,
+            "Type": 1
+          }
+        ],
+        "IsAvailable": true,
+        "Modules": [
+          {
+            "Foldername": "assets",
+            "Fingerprint": 17901566
+          },
+          {
+            "Foldername": "com",
+            "Fingerprint": 3530455056
+          },
+          {
+            "Foldername": "mcmod.info",
+            "Fingerprint": 4288725874
+          },
+          {
+            "Foldername": "META-INF",
+            "Fingerprint": 1901097673
+          }
+        ],
+        "PackageFingerprint": 4278904389,
+        "GameVersion": [
+          "1.7.10"
+        ]
+      },
+      "dateInstalled": "2017-05-26T20:44:10.477906Z",
+      "dateUpdated": "2017-05-26T20:44:10.4789077Z",
+      "dateLastUpdateAttempted": "2017-05-26T20:44:10.4789077Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null
+    },
+    {
+      "addonID": 233225,
+      "gameInstanceID": "926bb863-eebe-47ea-8cbe-f247bc4b2038",
+      "installedFile": {
+        "Id": 2252273,
+        "FileName": "ezstorage-1.1.0.jar",
+        "FileNameOnDisk": "ezstorage-1.1.0.jar",
+        "FileDate": "2015-08-14T16:52:45",
+        "ReleaseType": 1,
+        "FileStatus": 2,
+        "DownloadURL": "https://addons.cursecdn.com/files/2252/273/ezstorage-1.1.0.jar",
+        "IsAlternate": false,
+        "AlternateFileId": 0,
+        "Dependencies": [],
+        "IsAvailable": true,
+        "Modules": [
+          {
+            "Foldername": "assets",
+            "Fingerprint": 3870639795
+          },
+          {
+            "Foldername": "com",
+            "Fingerprint": 1573701657
+          },
+          {
+            "Foldername": "mcmod.info",
+            "Fingerprint": 1434387376
+          },
+          {
+            "Foldername": "meta-inf",
+            "Fingerprint": 2464251221
+          }
+        ],
+        "PackageFingerprint": 1133440608,
+        "GameVersion": [
+          "1.7.10"
+        ]
+      },
+      "dateInstalled": "2017-05-26T20:44:56.035041Z",
+      "dateUpdated": "2017-05-26T20:44:56.0370432Z",
+      "dateLastUpdateAttempted": "2017-05-26T20:44:56.0370432Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
