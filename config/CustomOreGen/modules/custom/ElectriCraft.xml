@@ -1,0 +1,603 @@
+<!-- =================================================================
+     Custom Ore Generation "ElectriCraft" Module: This configuration
+     covers copper, mountain copper, tin, mountain tin, silver,
+     mountain silver, nickel, mountain nickel, aluminum, platinum, and
+     mountain platinum.
+     ================================================================= -->
+
+
+<!-- An expansion to Rotarycraft, this mod adds oregen appropriate to
+     the formation of various wires with different electrical
+     advantages/disadvantages.  Configuration by Reteo. -->
+
+
+
+
+<!-- Is the "ElectriCraft" mod on the system?  Let's find out! -->
+<IfModInstalled name="ElectriCraft">
+
+  <!-- Starting Configuration for Custom Ore Generation. -->
+  <ConfigSection>
+
+
+
+
+
+    <!-- Setup Screen Configuration -->
+    <ConfigSection>
+      <OptionDisplayGroup name='groupElectriCraft' displayName='ElectriCraft' displayState='shown'>
+        <Description>
+          Distribution options for ElectriCraft Ores.
+        </Description>
+      </OptionDisplayGroup>
+      <OptionChoice name='enableElectriCraft' displayName='Handle ElectriCraft Setup?' default='true' displayState='shown_dynamic' displayGroup='groupElectriCraft'>
+        <Description> Should Custom Ore Generation handle ElectriCraft ore generation? </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use Custom Ore Generation to handle ElectriCraft ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='ElectriCraft ores will be handled by the mod itself.'/>
+      </OptionChoice>
+      <OptionChoice name='cleanUpElectriCraft' displayName='Use ElectriCraft Cleanup?' default='true' displayState='shown_dynamic' displayGroup='groupElectriCraft'>
+        <Description> Should Custom Ore Generation use the Substitution Pass to remove all instances of ElectriCraft ore from the world?  If the mod's oregen can be turned off in its configuration, then it's recommended to do so, as the substitution pass can slow the game significantly.  If this option is disabled without disabling the mod's own ore generation, you'll end up with two oregens working at once, flooding the world with ore.  Enabled by default to ensure the ores are completely removed. </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use the substitution pass to clean up ElectriCraft ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='ElectriCraft ores do not need to be cleaned up by a substitution pass.'/>
+      </OptionChoice>
+
+      <!-- Copper Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrCopperDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Copper is generated </Description>
+          <DisplayName>ElectriCraft Copper</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Copper is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrCopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Copper distributions </Description>
+          <DisplayName>ElectriCraft Copper Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrCopperSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Copper distributions </Description>
+          <DisplayName>ElectriCraft Copper Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Copper Configuration UI Complete -->
+
+
+      <!-- Mountain Copper Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrMountainCopperDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Mountain Copper is generated </Description>
+          <DisplayName>ElectriCraft Mountain Copper</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Copper is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrMountainCopperFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Mountain Copper distributions </Description>
+          <DisplayName>ElectriCraft Mountain Copper Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrMountainCopperSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Mountain Copper distributions </Description>
+          <DisplayName>ElectriCraft Mountain Copper Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Copper Configuration UI Complete -->
+
+
+      <!-- Tin Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrTinDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Tin is generated </Description>
+          <DisplayName>ElectriCraft Tin</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:1")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:1")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:1")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Tin is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrTinFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Tin distributions </Description>
+          <DisplayName>ElectriCraft Tin Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrTinSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Tin distributions </Description>
+          <DisplayName>ElectriCraft Tin Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Tin Configuration UI Complete -->
+
+
+      <!-- Mountain Tin Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrMountainTinDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Mountain Tin is generated </Description>
+          <DisplayName>ElectriCraft Mountain Tin</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:1")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:1")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:1")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Tin is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrMountainTinFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Mountain Tin distributions </Description>
+          <DisplayName>ElectriCraft Mountain Tin Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrMountainTinSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Mountain Tin distributions </Description>
+          <DisplayName>ElectriCraft Mountain Tin Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Tin Configuration UI Complete -->
+
+
+      <!-- Silver Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrSilverDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Silver is generated </Description>
+          <DisplayName>ElectriCraft Silver</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:2")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:2")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:2")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Silver is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrSilverFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Silver distributions </Description>
+          <DisplayName>ElectriCraft Silver Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrSilverSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Silver distributions </Description>
+          <DisplayName>ElectriCraft Silver Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Silver Configuration UI Complete -->
+
+
+      <!-- Mountain Silver Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrMountainSilverDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Mountain Silver is generated </Description>
+          <DisplayName>ElectriCraft Mountain Silver</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:2")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:2")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:2")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Silver is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrMountainSilverFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Mountain Silver distributions </Description>
+          <DisplayName>ElectriCraft Mountain Silver Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrMountainSilverSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Mountain Silver distributions </Description>
+          <DisplayName>ElectriCraft Mountain Silver Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Silver Configuration UI Complete -->
+
+
+      <!-- Nickel Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrNickelDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Nickel is generated </Description>
+          <DisplayName>ElectriCraft Nickel</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:3")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:3")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:3")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Nickel is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrNickelFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Nickel distributions </Description>
+          <DisplayName>ElectriCraft Nickel Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrNickelSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Nickel distributions </Description>
+          <DisplayName>ElectriCraft Nickel Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Nickel Configuration UI Complete -->
+
+
+      <!-- Mountain Nickel Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrMountainNickelDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Mountain Nickel is generated </Description>
+          <DisplayName>ElectriCraft Mountain Nickel</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:3")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:3")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:3")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Nickel is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrMountainNickelFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Mountain Nickel distributions </Description>
+          <DisplayName>ElectriCraft Mountain Nickel Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrMountainNickelSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Mountain Nickel distributions </Description>
+          <DisplayName>ElectriCraft Mountain Nickel Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Nickel Configuration UI Complete -->
+
+
+      <!-- Aluminum Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrAluminumDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Aluminum is generated </Description>
+          <DisplayName>ElectriCraft Aluminum</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:4")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:4")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:4")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Aluminum is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrAluminumFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Aluminum distributions </Description>
+          <DisplayName>ElectriCraft Aluminum Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrAluminumSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Aluminum distributions </Description>
+          <DisplayName>ElectriCraft Aluminum Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Aluminum Configuration UI Complete -->
+
+
+      <!-- Platinum Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrPlatinumDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Platinum is generated </Description>
+          <DisplayName>ElectriCraft Platinum</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:5")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:5")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:5")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Platinum is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrPlatinumFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Platinum distributions </Description>
+          <DisplayName>ElectriCraft Platinum Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrPlatinumSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Platinum distributions </Description>
+          <DisplayName>ElectriCraft Platinum Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Platinum Configuration UI Complete -->
+
+
+      <!-- Mountain Platinum Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='elcrMountainPlatinumDist'  displayState=':= if(?enableElectriCraft, "shown", "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Controls how Mountain Platinum is generated </Description>
+          <DisplayName>ElectriCraft Mountain Platinum</DisplayName>
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:5")) '>
+
+          <Choice value='LayeredVeins' displayValue='Layered Veins'>
+            <Description>
+              Small, fairly rare motherlodes with 2-4 horizontal veins each.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:5")) '>
+
+          <Choice value='StrategicClouds' displayValue='Strategic Clouds'>
+            <Description>
+              Large irregular clouds filled lightly with ore.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <IfCondition condition=':= (?blockExists("ElectriCraft:electricraft_block_ore:5")) '>
+
+          <Choice value='Vanilla' displayValue='Vanilla'>
+            <Description>
+              Simulates Vanilla Minecraft.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Mountain Platinum is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='elcrMountainPlatinumFreq' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Frequency multiplier for ElectriCraft Mountain Platinum distributions </Description>
+          <DisplayName>ElectriCraft Mountain Platinum Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='elcrMountainPlatinumSize' default='1'  min='0' max='5' displayState=':= if(?enableElectriCraft, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupElectriCraft'>
+          <Description> Size multiplier for ElectriCraft Mountain Platinum distributions </Description>
+          <DisplayName>ElectriCraft Mountain Platinum Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Mountain Platinum Configuration UI Complete -->
+
+    </ConfigSection>
+    <!-- Setup Screen Complete -->
+
+    <IfCondition condition=':= ?enableElectriCraft'>
+
+
+
+
+      <!-- Overworld Setup Beginning -->
+
+      <IfCondition condition=':= ?COGActive'>
+
+        <!-- Starting Original "Overworld" Block Removal -->
+
+        <IfCondition condition=':= ?cleanUpElectriCraft'>
+          <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+            <Substitute name='elcrOverworldBlockSubstitute0' block='minecraft:stone'>
+              <Description>
+                Replace vanilla-generated ore clusters.
+              </Description>
+              <Comment>
+                The global option  deferredPopulationRange must be
+                large enough to catch all ore  clusters (>= 32).
+              </Comment>
+              <Replaces block='ElectriCraft:electricraft_block_ore' weight='1.0' />
+              <Replaces block='ElectriCraft:electricraft_block_ore:1' weight='1.0' />
+              <Replaces block='ElectriCraft:electricraft_block_ore:2' weight='1.0' />
+              <Replaces block='ElectriCraft:electricraft_block_ore:3' weight='1.0' />
+              <Replaces block='ElectriCraft:electricraft_block_ore:4' weight='1.0' />
+              <Replaces block='ElectriCraft:electricraft_block_ore:5' weight='1.0' />
+            </Substitute>
+          </IfCondition>
+        </IfCondition>
+      </IfCondition>
+      <!-- Overworld Setup Complete -->
+
+    </IfCondition>
+
+  </ConfigSection>
+  <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "ElectriCraft" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Advanced Configuration
+     Generator.  If you wish to make your own configurations for a mod
+     not currently supported by Custom Ore Generation, and you don't
+     want the hassle of writing XML, you can find the generator script
+     at its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->
